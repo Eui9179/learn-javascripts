@@ -1,13 +1,13 @@
 # Learn-javascripts
 
-## let & const
+# let & const
 
 let(variable values): 값을 수정할 수 있는 변수를 선언할 때 사용<br>
 const(constant values): 값을 수정하지 않을 때 사용<br>
 
 <br>
 
-## Arrow Functions
+# Arrow Functions
 
     function myFnc(){
         ...
@@ -19,7 +19,7 @@ const(constant values): 값을 수정하지 않을 때 사용<br>
     * No more issues with the 'this' keyword
 <br>
 
-## Expors & Imports (Modules)
+# Expors & Imports (Modules)
 
 * person.js 
 
@@ -51,7 +51,9 @@ const(constant values): 값을 수정하지 않을 때 사용<br>
 
 <br>
 
-## Classes
+# Classes
+
+<br>
 
 * Class
 
@@ -86,30 +88,35 @@ const(constant values): 값을 수정하지 않을 때 사용<br>
 
 <br>
 
-## Spread & Rest Operators
+# Spread & Rest Operators
 
 - Spread ...
 
-    const newArray = [...oldArray]
-    const newObject = {...oldObject}
+        const newArray = [...oldArray]
+        const newObject = {...oldObject}
 
 <br>
 
 - Rest
 
-    function sortArgs(...args){
+        function sortArgs(...args){
+            ...
+        }
 
-    }
-    모든 parameter를 배열로 통합한다.
+        //모든 parameter를 배열로 통합한다.
 
  
  <br>
 
- ## Destructuringj
+ # Destructuring
+
+ <br>
 
  - Array Destructuring
 
         [a,b] = ['Hello', 'Max']
+
+<br>
 
 - Object Destructuring
 
@@ -117,10 +124,11 @@ const(constant values): 값을 수정하지 않을 때 사용<br>
 
 <br>
 
-## Array Function
+# Array Function
 
-        const numbers = [1, 2, 3, 0];
+    const numbers = [1, 2, 3, 0];
 <br>
+
 - map
         
         const doubleNumArray = numbers.map((num)=>{
@@ -129,12 +137,14 @@ const(constant values): 값을 수정하지 않을 때 사용<br>
 
         //result: [1, 4, 6]
 <br>
+
 - find: 조건에 맞는 요소 중 가장 먼저 있는 값을 반환
 
         const found = numbers.find(element => element > 1);
 
         //result: 1
 <br>
+
 - findIndex: 조건에 맞는 요소 중 가장 먼저 있는 인덱스 반환
 
         const foundIndex = numbers.findIndex(
@@ -143,17 +153,23 @@ const(constant values): 값을 수정하지 않을 때 사용<br>
 
         //result: 2
 
+<br>
+
 - filter: 조건에 맞는 값 전부를 배열로 반환
 
         const filterArray = numbers.filter((num) => num > 1);
 
         //result: [2, 3]
 
+<br>
+
 - slice: 배열 자르기
 
         numbers.slice(1); //[1, 2]
         numbers.slice(1, 2); //[2, 3]
         number.slice(-1); //[0]
+
+<br>
 
 - splice: 배열 치환
 
